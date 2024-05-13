@@ -8,7 +8,13 @@
  *  - for, foreach, while, do while sont interdits
  */
 
-const concat = (arr1, arr2) => {}
+const concat = (arr1, arr2) => {return arr1.concat(arr2);};
+
+const tableau1 = [1,2,3];
+const tableau2 = [4,5,6];
+
+const tableauFusion = concat(tableau1,tableau2);
+console.log(tableauFusion);
 
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
