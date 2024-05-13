@@ -10,9 +10,7 @@
  * 
   */
 
-const multiplyByTwo = (array) => array*2;
-
-console.log(multiplyByTwo(45));
+const multiplyByTwo = (array) => {}
 
 /**
  * Utiliser la fonction .filter sur le tableau passé en paramètre
