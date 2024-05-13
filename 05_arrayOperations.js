@@ -10,7 +10,7 @@
  * 
   */
 
-const multiplyByTwo = (array) => {}
+const multiplyByTwo = [1,4,9,16];
 
 
 
