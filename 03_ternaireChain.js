@@ -11,7 +11,8 @@
  */
 
 function ternaryChain(a, b) {
-    return (a > b) ? "": (a<b) ? "" : "";
+    return (a > b) ? ">" : 
+           (a < b) ? "<" : "=";
 }
 
 console.log(ternaryChain(15, 25));//en modifiant les valeurs nous pouvons vérfier que le return fonctionne bel et bien.
