@@ -16,3 +16,4 @@ function ternaryChain(a, b) {
 }
 
 console.log(ternaryChain(15, 25));//en modifiant les valeurs nous pouvons vérfier que le return fonctionne bel et bien.
+module.exports = ternaryChain;

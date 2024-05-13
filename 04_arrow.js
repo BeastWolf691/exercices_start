@@ -18,6 +18,6 @@ let arrow1 = (a) => {return a + 1};
  *   - le mot clée "return" est interdis
  */
 
-let arrow2 = () => 42;
+let arrow2 = (b) => b + 1;
 
 module.exports = {arrow1, arrow2};
