@@ -12,6 +12,9 @@
 
 const multiplyByTwo = (array) => {}
 
+
+
+
 /**
  * Utiliser la fonction .filter sur le tableau passé en paramètre
  * retourne un nouveau tableau avec uniquement les nom qui commencent par la lettre "A"
