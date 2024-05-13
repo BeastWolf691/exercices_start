@@ -11,7 +11,7 @@
  */
 
 function ternaryChain(a, b) {
-    return (b > a) ? "b supérieur à a" : (b === a) ? "b est égal à a" : "b n'est pas supérieur à a";
+    return (b > a) ? , (b === a) ? , (b<a) ? a:b;
 }
 
 console.log(ternaryChain(15, 25));//en modifiant les valeurs nous pouvons vérfier que le return fonctionne bel et bien.
