@@ -13,6 +13,7 @@
 const multiplyByTwo = (array) => array*2;
 
 console.log(multiplyByTwo(45));
+
 /**
  * Utiliser la fonction .filter sur le tableau passé en paramètre
  * retourne un nouveau tableau avec uniquement les nom qui commencent par la lettre "A"
