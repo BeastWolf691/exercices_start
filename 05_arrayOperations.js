@@ -11,7 +11,9 @@
   */
 
 const multiplyByTwo = [1,4,9,16];
+const map1 = multiplyByTwo.map((x) => x*2);
 
+console.log(map1);
 
 
 
