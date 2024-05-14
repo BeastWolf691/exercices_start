@@ -27,6 +27,8 @@ console.log(map1);
   */
 /**ce qui est après le = peut etre modifier, c'est un exemple type*/
 
+
+
 const filterNameStartByA = (array) => {}
 
 /**
