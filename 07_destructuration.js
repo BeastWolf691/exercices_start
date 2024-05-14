@@ -50,10 +50,12 @@ console.log(extractRest(array2));
  */
 
 const user = {name: "toto", age: 42}
+
 const extractName = (id) => {
-    const {age, identity} = id;
-    return identity
+    const {name} = id;
+    return name
 };
+
 console.log(extractName(user));
 
 /**
@@ -67,6 +69,13 @@ console.log(extractName(user));
  * 
  */
 
-const removePassword = () => {};
+const username = {name: "toto", password: "1234"}
+
+const removePassword = (idname) => {
+    const {name} = idname;
+    return name
+};
+
+console.log(removePassword(user));
 
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}
