@@ -20,10 +20,13 @@ const synchrone = () => {
 }
 
 const usingThen = (cb) => {
+    sleep(2000).then(() => {
+        cb()
+    });
 }
+//cb()
 
-synchrone();
-console.log("end");
+usingThen(() => console.log("fini"));
 
 /**
  * Créez une fonction asynchrone qui attend 2 seconde puis execute le callback passé en paramètre
