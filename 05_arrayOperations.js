@@ -43,6 +43,7 @@ console.log(filterNameStartByA(array1));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
+
 const sum = (array) => {}
 
 /**
