@@ -11,7 +11,7 @@
 const array1 = [1,2,3];
 const array2 = [4,5,6];
 
-const res = [...array1, ...array2]
+const res = [...array1, ...array2]/**cette facon de faire permet d'allonger le tableau 1 afin d'integrer les informations du 2 */
 console.log(res);
 
 
