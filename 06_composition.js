@@ -48,8 +48,9 @@ console.log(merge(obj1,obj2));
  * contrainte:
  *  - interdiction d'utiliser l'opérateur d'affectation "="
  */
+const user = {name:'toto'};
 
-const setName = 
+const setName = (user, name) => {return user, name:'titi'}
 
 
 // astuce: {...obj} crée une copie de l'objet, c'est un des principes de l'immutabilité et évite les problèmes de référence
