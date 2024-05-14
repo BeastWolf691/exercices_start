@@ -20,14 +20,22 @@ const extractFirstTwo = (index) => {
 
 console.log(extractFirstTwo(array1));
 
+
 /**
  * utilisez la décomposition pour extraire la premiere case du tableau et le reste du tableau
  * retournez uniquement le reste du tableau
  * 
  * exemple: [1, 2, 3] => [2, 3]
  */
+const array2 = [1,2,3];
 
-const extractRest = () => {}
+const extractRest = (rest) => {
+    const [first, ...restArray2] = rest;
+    return [restArray2]
+};
+
+console.log(extractRest(restArray2));
+
 
 /**
  * utilisez la décomposition pour extraire le champ "name" de l'objet passé en paramètre
