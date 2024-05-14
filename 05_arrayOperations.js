@@ -25,8 +25,9 @@ console.log(map1);
  *   - les mots clées function et return sont interdits
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
+/**ce qui est après le = peut etre modifier, c'est un exemple type*/
 
-const filterNameStartByA = (array) => {}/**ce qui est après le = peut etre modifier, c'est un exemple type*/
+const filterNameStartByA = (array) => {}
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre

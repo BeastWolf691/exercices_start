@@ -15,7 +15,15 @@
  * doit renvoyer "admin"
  * 
  */
+const band =  {
+     name: "John",
+       group: {
+         name: "admin"
+       }
+    }
 
-const getGroupName = (obj) => {}
+const getGroupName = (obj) => {
+    const {band?.group?};
+};
 
 module.exports = {getGroupName};
