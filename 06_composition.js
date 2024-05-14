@@ -23,16 +23,20 @@ console.log(res);
  * contrainte:
  * - ne pas utiliser la méthode push
  */
-
-const push = (arr, item) => {}
+const array3 = [1,2,3];
+const push = [...array3,4];
+console.log(push);
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
  * 
  * ex: {a: 1, b: 2}, {c: 3, d: 4} => {a: 1, b: 2, c: 3, d: 4}
  */
+const obj1 = {a: 1, b:2};
+const obj2 = {c: 3, d: 4};
 
-const merge = (obj1, obj2) => {}
+const merge = {...obj1, ...obj2};
+console.log(merge);
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
