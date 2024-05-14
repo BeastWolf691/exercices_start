@@ -30,11 +30,11 @@ console.log(extractFirstTwo(array1));
 const array2 = [1,2,3];
 
 const extractRest = (rest) => {
-    const [first, ...restArray2] = rest;
-    return [restArray2]
+    const [first, ...restArray2] = rest;//on peut enlever fist, ce cas sert seulement pour les tableaux
+    return restArray2
 };
 
-console.log(extractRest(restArray2));
+console.log(extractRest(array2));
 
 
 /**
