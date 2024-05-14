@@ -30,7 +30,7 @@ console.log(extractFirstTwo(array1));
 const array2 = [1,2,3];
 
 const extractRest = (rest) => {
-    const [first, ...restArray2] = rest;//on peut enlever fist, ce cas sert seulement pour les tableaux
+    const [first, ...restArray2] = rest;//on peut enlever first, ce cas sert seulement pour les tableaux
     return restArray2
 };
 
@@ -49,7 +49,12 @@ console.log(extractRest(array2));
  * - interdiction d'utiliser l'opérateur "." pour accéder au champ "name"
  */
 
-const extractName = () => {}
+const user = {name: "toto", age: 42}
+const extractName = (id) => {
+    const {age, identity} = id;
+    return identity
+};
+console.log(extractName(user));
 
 /**
  * utilisez la décomposition pour retourner l'objet utilisateur sans le champ "password"
