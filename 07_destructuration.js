@@ -11,8 +11,10 @@
  *  - interdiction d'utiliser [0] et [1]
  *  - interdiction d'utiliser slice ou splice
  */
+const array1 = [1,2,3];
 
-const extractFirstTwo = () => {}
+const extractFirstTwo = (first,second) => [first,second];
+console.log(extractFirstTwo(array1));
 
 /**
  * utilisez la décomposition pour extraire la premiere case du tableau et le reste du tableau
