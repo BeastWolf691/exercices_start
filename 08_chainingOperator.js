@@ -23,7 +23,8 @@ const band =  {
     }
 
 const getGroupName = (obj) => {
-    return band?.group?.name
+    return band?.group.name/**cela fait le chemon où nous voulons trouver l'information, si vous voulions que cela affiche name admin on se serait arreter a group. */
 };
 
+console.log(getGroupName())
 module.exports = {getGroupName};
