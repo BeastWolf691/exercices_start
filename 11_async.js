@@ -11,10 +11,19 @@
  *    - ne pas utiliser async await
  * 
  */
+const axios = require("axios");
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const synchrone = () => {
+  console.log("start");
+  const promise = axios.get("https://jsonplaceholder.typicode.com/todos/1");
+}
 
 const usingThen = (cb) => {
 }
+
+synchrone();
+console.log("end");
 
 /**
  * Créez une fonction asynchrone qui attend 2 seconde puis execute le callback passé en paramètre
