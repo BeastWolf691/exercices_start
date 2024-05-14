@@ -68,7 +68,18 @@ console.log(sum);
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (array, id) => {}
+const array3 =  [
+  {id: 1, name: 'John'},
+  {id: 2, name: 'Doe'},
+  {id: 3, name: 'Foo'},
+  {id: 4, name: 'Bar'},
+  ];
+
+const findUserById = (id) => array3.find(user => user.id === id);
+/**de cette maniere on indique le tableau où l'on cherche l'information, quel colonne est prise en compte */
+/**et dans console.log on indique l'id que nous voulons voir apparaître */
+
+console.log(findUserById(3))
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
