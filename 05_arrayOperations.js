@@ -28,8 +28,8 @@ console.log(map1);
 /**ce qui est après le = peut etre modifier, c'est un exemple type*/
 
 
-const array1 = ['prisme', 'ariel','json','antivol'];
-const filterNameStartByA = (array) => array.filter(item => item.startsWith('a'));/**cette méthode filtre par la 1ere lettre dans ce cas la minuscule et a */
+const array1 = ['Prisme', 'Ariel','Json','Antivol'];
+const filterNameStartByA = (array) => array.filter(item => item.startsWith('A'));/**cette méthode filtre par la 1ere lettre dans ce cas la minuscule et a */
 
 console.log(filterNameStartByA(array1));
 
@@ -45,7 +45,7 @@ console.log(filterNameStartByA(array1));
 
 const array2 = [1,4,9,16];
 
-const sum = array2.reduce ((accumulator, currentValue) => accumulator + currentValue);//cette fonction permet d'additionner la valeur total du tableau.
+const sum = array2.reduce ((accumulator, currentValue) => accumulator + currentValue,0);//cette fonction permet d'additionner la valeur total du tableau.
 
 console.log(sum);
 
@@ -75,11 +75,11 @@ const array3 =  [
   {id: 4, name: 'Bar'},
   ];
 
-const findUserById = (id) => array3.find(user => user.id === id);
+const findUserById = (arr, id) => arr.find(user => user.id === id)?.name;/**permet que l'objet redevienne un name */
 /**de cette maniere on indique le tableau où l'on cherche l'information, quel colonne est prise en compte */
 /**et dans console.log on indique l'id que nous voulons voir apparaître */
 
-console.log(findUserById(3))
+console.log(findUserById(array3,3))
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
