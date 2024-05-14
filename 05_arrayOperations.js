@@ -28,8 +28,10 @@ console.log(map1);
 /**ce qui est après le = peut etre modifier, c'est un exemple type*/
 
 
+const array1 = ['prisme', 'ariel','json','antivol'];
+const filterNameStartByA = (array) => array.filter(item => item.startsWith('a'));/**cette méthode filtre par la 1ere lettre dans ce cas la minuscule et a */
 
-const filterNameStartByA = (array) => {}
+console.log(filterNameStartByA(array1));
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
