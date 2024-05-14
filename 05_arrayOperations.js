@@ -16,7 +16,6 @@ const map1 = multiplyByTwo.map((x) => x*2);
 console.log(map1);
 
 
-
 /**
  * Utiliser la fonction .filter sur le tableau passé en paramètre
  * retourne un nouveau tableau avec uniquement les nom qui commencent par la lettre "A"
