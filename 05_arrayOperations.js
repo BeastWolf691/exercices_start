@@ -45,7 +45,7 @@ console.log(filterNameStartByA(array1));
 
 const array2 = [1,4,9,16];
 
-const sum = array2.reduce ((accumulator, currentValue) => accumulator + currentValue);
+const sum = array2.reduce ((accumulator, currentValue) => accumulator + currentValue);//cette fonction permet d'additionner la valeur total du tableau.
 
 console.log(sum);
 
