@@ -13,5 +13,5 @@ const asynchrone = async () => {
   console.log("end");
 }
  asynchrone();
-
+/**dans cet exemple end sera affiché après start sous un délai de 2000ms  */
 module.exports = {sleep};
