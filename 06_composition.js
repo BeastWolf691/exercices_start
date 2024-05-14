@@ -15,6 +15,7 @@ const concat = (a, b) => [...a, ...b]/**cette facon de faire permet d'allonger l
 
 console.log(concat(array1,array2));
 
+
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
  * 
@@ -24,8 +25,9 @@ console.log(concat(array1,array2));
  * - ne pas utiliser la méthode push
  */
 const array3 = [1,2,3];
-const push = [...array3,4];
-console.log(push);
+const valueToPush = 4
+const push = (c, d) => [...c,d];
+console.log(push(array3,valueToPush));
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
@@ -35,8 +37,8 @@ console.log(push);
 const obj1 = {a: 1, b:2};
 const obj2 = {c: 3, d: 4};
 
-const merge = {...obj1, ...obj2};
-console.log(merge);
+const merge = (e, f) => ({...e, ...f});
+console.log(merge(obj1,obj2));
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
