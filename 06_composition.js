@@ -11,9 +11,9 @@
 const array1 = [1,2,3];
 const array2 = [4,5,6];
 
-const arraycopy = (a) => {return [...array1, ...array2]}/**cette facon de faire permet d'allonger le tableau 1 afin d'integrer les informations du 2 */
-console.log(arraycopy);
+const concat = (a, b) => {return [...a, ...b]}/**cette facon de faire permet d'allonger le tableau 1 afin d'integrer les informations du 2 */
 
+console.log(concat(array1,array2));
 
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
