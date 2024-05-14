@@ -11,6 +11,8 @@
  *    - ne pas utiliser async await
  * 
  */
+
+
 const usingThen = (cb) => {
 }
 
@@ -24,6 +26,7 @@ const usingThen = (cb) => {
  *   - votre fonction doit être asynchrone et retourner une Promise
  *   - ne pas utiliser .then
  */
+
 
 const usingAwait = (cb) => {
 
@@ -43,6 +46,7 @@ const usingAwait = (cb) => {
 
 //décommentez la ligne suivante une fois le package installé
 //const axios = require("axios");
+
 
 const apiResponse = async (url) => {
 
