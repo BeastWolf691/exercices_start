@@ -13,7 +13,11 @@
  */
 const array1 = [1,2,3];
 
-const extractFirstTwo = (first,second) => [first,second];
+const extractFirstTwo = (index) => {
+    const [first, second, ...array1] = index;
+    return [first, second]
+};
+
 console.log(extractFirstTwo(array1));
 
 /**
