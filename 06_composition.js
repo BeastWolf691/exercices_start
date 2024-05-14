@@ -9,14 +9,10 @@
  */
 
 const arraystructuration = [1,2,3]
-console.log(arraystructuration);
 
 const arraycopy = [...arraystructuration, 4,5,6]
 console.log(arraycopy);
 
-const [a,b] = arraycopy;
-console.log(a);
-console.log(b);
 
 /**
  * utiliser l'opérateur de composition ... afin d'ajouter un élément à un tableau
