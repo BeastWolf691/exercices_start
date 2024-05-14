@@ -8,10 +8,11 @@
  *  - for, foreach, while, do while sont interdits
  */
 
-const arraystructuration = [1,2,3]
+const array1 = [1,2,3];
+const array2 = [4,5,6];
 
-const arraycopy = [...arraystructuration, 4,5,6]
-console.log(arraycopy);
+const res = [...array1, ...array2]
+console.log(res);
 
 
 /**
