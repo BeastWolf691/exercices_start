@@ -23,7 +23,7 @@ const band =  {
     }
 
 const getGroupName = (obj) => {
-    return band?.group?.
+    return band?.group?.name
 };
 
 module.exports = {getGroupName};
