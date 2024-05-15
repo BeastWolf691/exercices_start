@@ -51,7 +51,7 @@ console.log(merge(obj1,obj2));
 
 const user = {name:'toto'};
 
-const setName = (user, newName) => {return {...user, name: newName}};
+const setName = (user, name) => ({...user, name});
 
 console.log(setName(user,'titi'));
 // astuce: {...obj} crée une copie de l'objet, c'est un des principes de l'immutabilité et évite les problèmes de référence
