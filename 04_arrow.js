@@ -19,5 +19,6 @@ let arrow1 = (a) => {return a + 1};
  */
 
 let arrow2 = (b) => b + 1;
+console.log(arrow1(5),arrow2(8));
 
 module.exports = {arrow1, arrow2};
