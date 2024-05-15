@@ -24,21 +24,17 @@ console.log(concat(array1,array2));
  * contrainte:
  * - ne pas utiliser la méthode push
  */
-const array3 = [1,2,3];
-const valueToPush = 4
-const push = (c, d) => [...c,d];
-console.log(push(array3,valueToPush));
+const push = (arr3, i) => [...arr3,i];
+console.log(push([1,2,3],4));
 
 /**
  * utiliser l'opérateur de composition ... afin de fusionner 2 objets passés en paramètres
  * 
  * ex: {a: 1, b: 2}, {c: 3, d: 4} => {a: 1, b: 2, c: 3, d: 4}
  */
-const obj1 = {a: 1, b:2};
-const obj2 = {c: 3, d: 4};
 
-const merge = (e, f) => ({...e, ...f});
-console.log(merge(obj1,obj2));
+const merge = (obj1,obj2) => ({...obj1, ...obj2});
+console.log(merge({a: 1, b: 2}, {c: 3, d: 4}));
 
 /**
  * utiliser l'opérateur de composition ... afin de modifier la propriété name de l'objet
