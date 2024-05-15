@@ -15,16 +15,10 @@
  * doit renvoyer "admin"
  * 
  */
-const band =  {
-     name: "John",
-       group: {
-         name: "admin"
-       }
-    }
 
 const getGroupName = (obj) => {
-    return band?.group.name/**cela fait le chemon où nous voulons trouver l'information, si vous voulions que cela affiche name admin on se serait arreter a group. */
+    return band?.group?.name/**cela fait le chemon où nous voulons trouver l'information, si vous voulions que cela affiche name admin on se serait arreter a group. */
 };
 
-console.log(getGroupName())
+console.log(getGroupName({name: "John",group: {name: "admin"}}))
 module.exports = {getGroupName};
