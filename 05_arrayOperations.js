@@ -76,7 +76,7 @@ const array3 =  [
   {id: 4, name: 'Bar'},
   ];
 
-const findUserById = (arr, id) => arr.find(user => user.id === id)?.name;/**permet que l'objet redevienne un name */
+const findUserById = (arr, id) => arr.find(user => user.id === id)?.name ?? null;/**permet que l'objet redevienne un name, le partie null permet de renvoyer null si aucune valeur */
 /**de cette maniere on indique le tableau où l'on cherche l'information, quel colonne est prise en compte */
 /**et dans console.log on indique l'id que nous voulons voir apparaître */
 
