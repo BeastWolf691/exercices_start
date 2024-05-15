@@ -14,7 +14,6 @@
 
 const extractFirstTwo = ([first, second]) => [first, second];
 
-
 console.log(extractFirstTwo([1, 2, 3]));
 
 
