@@ -10,10 +10,10 @@
  * 
   */
 
-const multiplyByTwo = [1,4,9,16];
-const map1 = multiplyByTwo.map((x) => x*2);
+const mapArray = [1,4,9,16];
+const multiplyByTwo = array => array.map((x) => x*2);/**il existe encore un code plus court selon le modele sur MDN mais il est préférable de renseigné = pour le visuel */
 
-console.log(map1);
+console.log(multiplyByTwo(mapArray));
 
 
 /**
