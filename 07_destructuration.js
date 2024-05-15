@@ -11,14 +11,11 @@
  *  - interdiction d'utiliser [0] et [1]
  *  - interdiction d'utiliser slice ou splice
  */
-const array1 = [1,2,3];
 
-const extractFirstTwo = (index) => {
-    const [first, second, ...array1] = index;
-    return [first, second]
-};
+const extractFirstTwo = ([first, second]) => [first, second];
 
-console.log(extractFirstTwo(array1));
+
+console.log(extractFirstTwo([1, 2, 3]));
 
 
 /**
@@ -27,14 +24,10 @@ console.log(extractFirstTwo(array1));
  * 
  * exemple: [1, 2, 3] => [2, 3]
  */
-const array2 = [1,2,3];
 
-const extractRest = (rest) => {
-    const [first, ...restArray2] = rest;//on peut enlever first, ce cas sert seulement pour les tableaux
-    return restArray2
-};
+const extractRest = ([_, ...rest]) => rest;
 
-console.log(extractRest(array2));
+console.log(extractRest([1,2,3]));
 
 
 /**
